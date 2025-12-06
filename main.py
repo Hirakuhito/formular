@@ -13,6 +13,7 @@ def main():
 
     field = p.loadURDF("plane.urdf")
     car = p.loadURDF("./formular_car/car.urdf", [0, 0, 0.1], startOrient)
+    # car = p.loadURDF("test_car.urdf", [0, 0, 1], startOrient)
 
     print(p.getNumJoints(car))
     for i in range(p.getNumJoints(car)):
