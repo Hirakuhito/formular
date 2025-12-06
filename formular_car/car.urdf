@@ -8,12 +8,12 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="body.stl" scale="1.0"/>
+                <mesh filename="./components/body.stl" scale="1.0"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="body.stl" scale="1.0"/>
+                <mesh filename="./components/body.stl" scale="1.0"/>
             </geometry>
         </collision>
     </link>
@@ -84,12 +84,12 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="wheel_FL.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_FL.stl" scale="1.0"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="wheel_FL.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_FL.stl" scale="1.0"/>
             </geometry>
         </collision>
     </link>
@@ -101,12 +101,12 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="wheel_FR.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_FR.stl" scale="1.0"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="wheel_FR.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_FR.stl" scale="1.0"/>
             </geometry>
         </collision>
     </link>
@@ -118,12 +118,12 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="wheel_RL.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_RL.stl" scale="1.0"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="wheel_RL.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_RL.stl" scale="1.0"/>
             </geometry>
         </collision>
     </link>
@@ -135,12 +135,12 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="wheel_RR.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_RR.stl" scale="1.0"/>
             </geometry>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="wheel_RR.stl" scale="1.0"/>
+                <mesh filename="./components/wheel_RR.stl" scale="1.0"/>
             </geometry>
         </collision>
     </link>
