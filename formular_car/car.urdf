@@ -155,7 +155,7 @@
         <parent link="body"/>
         <child link="susp_fl"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.01" effort="500" velocity="1.0"/>
+        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
     </joint>
 
     <!--* Steering Joint -->
@@ -182,7 +182,7 @@
         <parent link="body"/>
         <child link="susp_fr"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.01" effort="500" velocity="1.0"/>
+        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
     </joint>
 
     <!--* Steering Joint -->
@@ -209,7 +209,7 @@
         <parent link="body"/>
         <child link="susp_rl"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.01" effort="500" velocity="1.0"/>
+        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
     </joint>
 
     <!--* Steering Joint -->
@@ -234,7 +234,7 @@
         <parent link="body"/>
         <child link="susp_rr"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.01" effort="500" velocity="1.0"/>
+        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
     </joint>
 
     <!--* Steering Joint -->
