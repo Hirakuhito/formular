@@ -18,35 +18,6 @@
         </collision>
     </link>
 
-    <!--* Supension Link -->
-    <link name="susp_fl">
-        <inertial>
-            <mass value="1e-5"/>
-            <inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-6"/>
-        </inertial>
-    </link>
-
-    <link name="susp_fr">
-        <inertial>
-            <mass value="1e-5"/>
-            <inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-6"/>
-        </inertial>
-    </link>
-
-    <link name="susp_rl">
-        <inertial>
-            <mass value="1e-5"/>
-            <inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-6"/>
-        </inertial>
-    </link>
-
-    <link name="susp_rr">
-        <inertial>
-            <mass value="1e-5"/>
-            <inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-6"/>
-        </inertial>
-    </link>
-
     <!--* Steering link -->
     <link name="steering_fl">
         <inertial>
@@ -149,21 +120,13 @@
     <!-- ======================== -->
     <!--     FRONT LEFT WHEEL     -->
     <!-- ======================== -->
-    <!--* Wheel mount  -->
-    <joint name="susp_joint_fl" type="prismatic">
-        <origin xyz="-1.0 1.4 0.05" rpy="0.0 0.0 0.0"/>
-        <parent link="body"/>
-        <child link="susp_fl"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
-    </joint>
-
     <!--* Steering Joint -->
     <joint name="steer_joint_fl" type="revolute">
-        <parent link="susp_fl"/>
+        <origin xyz="-1.05 1.4 0.09" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
         <child link="steering_fl"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.524" upper="0.524" effort="80" velocity="100"/>
+        <limit lower="-0.5" upper="0.5" effort="80" velocity="100"/>
     </joint>
 
     <!--* Wheel joint -->
@@ -176,21 +139,13 @@
     <!-- ========================= -->
     <!--     FRONT RIGHT WHEEL     -->
     <!-- ========================= -->
-    <!--* Wheel mount  -->
-    <joint name="susp_joint_fr" type="prismatic">
-        <origin xyz="1.0 1.4 0.05" rpy="0.0 0.0 0.0"/>
-        <parent link="body"/>
-        <child link="susp_fr"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
-    </joint>
-
     <!--* Steering Joint -->
     <joint name="steer_joint_fr" type="revolute">
-        <parent link="susp_fr"/>
+        <origin xyz="1.05 1.4 0.09" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
         <child link="steering_fr"/>
         <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.524" upper="0.524" effort="80" velocity="100"/>
+        <limit lower="-0.5" upper="0.5" effort="80" velocity="100"/>
     </joint>
 
     <!--* Wheel joint -->
@@ -203,18 +158,10 @@
     <!-- ======================= -->
     <!--     RESR LEFT WHEEL     -->
     <!-- ======================= -->
-    <!--* Wheel mount  -->
-    <joint name="susp_joint_rl" type="prismatic">
-        <origin xyz="-1.05 -1.5 0.08" rpy="0.0 0.0 0.0"/>
-        <parent link="body"/>
-        <child link="susp_rl"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
-    </joint>
-
     <!--* Steering Joint -->
     <joint name="steer_joint_rl" type="fixed">
-        <parent link="susp_rl"/>
+        <origin xyz="-1.05 -1.5 0.12" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
         <child link="steering_rl"/>
     </joint>
 
@@ -228,18 +175,10 @@
     <!-- ======================== -->
     <!--     REAR RIGHT WHEEL     -->
     <!-- ======================== -->
-    <!--* Wheel mount  -->
-    <joint name="susp_joint_rr" type="prismatic">
-        <origin xyz="1.05 -1.5 0.08" rpy="0.0 0.0 0.0"/>
-        <parent link="body"/>
-        <child link="susp_rr"/>
-        <axis xyz="0.0 0.0 1.0"/>
-        <limit lower="-0.1" upper="0.08" effort="500" velocity="1.0"/>
-    </joint>
-
     <!--* Steering Joint -->
     <joint name="steer_joint_rr" type="fixed">
-        <parent link="susp_rr"/>
+        <origin xyz="1.05 -1.5 0.12" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
         <child link="steering_rr"/>
     </joint>
 
